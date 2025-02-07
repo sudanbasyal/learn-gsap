@@ -2,32 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .gradient-blue {
+    @apply mt-2 bg-gradient-to-t from-sky-500 to-indigo-500 h-14 w-14 flex justify-center items-center rounded-md;
+    /* margin-top: 20px;
+    background: linear-gradient(to right, #0000ff, #000080);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; */
+  }
+  .gradient-purple {
+    @apply mt-2 bg-gradient-to-t from-purple-500 to-pink-500 h-14 w-14 flex justify-center items-center rounded-md;
+    /* margin-top: 20px;
+    background: linear-gradient(to right, #c70ee8d6, #ab1ccb);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; */
+  }
+  .gradient-red {
+    @apply mt-2 bg-gradient-to-t from-red-500 to-orange-500 h-14 w-14 flex justify-center items-center rounded-md;
+    /* margin-top: 20px;
+    background: linear-gradient(to right, #ff0000, #801e00);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; */
   }
 }

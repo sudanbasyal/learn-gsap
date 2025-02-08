@@ -1,13 +1,13 @@
 import React from "react";
 
-function Home() {
+function Lab() {
   return (
     <div className="page-content">
       <h1>
-        Home<sup>(01)</sup>
+        Lab<sup>(05)</sup>
       </h1>
     </div>
   );
 }
 
-export default Home;
+export default Lab;

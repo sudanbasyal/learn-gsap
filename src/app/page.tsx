@@ -3,6 +3,7 @@ import GSAPStarter from "@/animations/GSAPStarter";
 
 export default function Home() {
   // use
+
   return (
     <>
       {/* GSAP and React Starter */}

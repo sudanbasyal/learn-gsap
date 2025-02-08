@@ -14,13 +14,13 @@ export default function Scroll() {
       const boxes = gsap.utils.toArray<HTMLElement>(".box");
       boxes.forEach((box) => {
         gsap.from(box, {
-          x: 400,
+          x: -400,
           opacity: 0,
           delay: 2,
           scrollTrigger: {
-            trigger: box,
-            start: "bottom bottom",
-            end: "top 60%",
+            trigger: box, //the box that will trigger the animation
+            start: "bottom bottom", //start the animation when the box is at the bottom of the viewport
+            end: "top 60%", //end the animation when the top of box is at 60% of the viewport
             scrub: true, //links the animation to scrollbar
             markers: true, //for debugging
           },

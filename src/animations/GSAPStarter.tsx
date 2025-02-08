@@ -19,7 +19,7 @@ export default function GSAPStarter() {
         .timeline()
         .to(boxes[0], { x: 120, rotation: 360 })
         .to(boxes[1], { x: -120, rotation: -360 }, "<")
-        .to(boxes[2], { y: -100 })
+        .to(boxes[2], { y: -166 })
         .reverse();
     },
     { scope: container }
